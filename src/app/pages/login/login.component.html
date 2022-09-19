@@ -1,0 +1,34 @@
+<body>
+  <div class="container col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+    <div class="row">
+
+            <div class="form-container">
+              <p class="my-2">Login</p>
+
+                <form class="form-group" >
+                  <app-input
+                    [type]="text"
+                    [id]="username"
+                    [placeholder]="username"
+                    [name]="username"
+                  ></app-input>
+
+                  <div class="frame-container">
+                    <button
+                      class="btn btn-primary"
+                      type="submit"
+                      routerLink="/booking"
+                      >
+                      <!-- [buttonActive]="myForm"  it desn, mert a form validáció az input.ts fileban van -->
+                      l o g i n
+                    </button>
+                  <div>Not account yet? <a href="#">Register</a></div>
+                </div>
+              </form>
+
+          </div>
+
+    </div>
+  </div>
+</body>
+

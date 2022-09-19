@@ -1,0 +1,25 @@
+<div class="cards">
+<a
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  class="text-dark"
+  (click)="onSelected()">
+          <img
+            [src]="booking.imagePath"
+            alt="{{ booking.place }}"
+            class="img-responsive"
+            style="height: 113px; width: 164px;">
+
+      <h4 class="mx-1">{{ booking.place }}</h4>
+      <p class="mx-1">{{ booking.date }}</p>
+</a>
+  <button
+    type="submit"
+    class="btn btn-primary"
+    (click)="isVisible =!isVisible"
+     >
+    book
+  </button>
+  <app-alert [done]="isVisible"></app-alert>
+</div>
+

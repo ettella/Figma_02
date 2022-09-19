@@ -1,0 +1,12 @@
+.gap {
+    margin-left:16px;
+    margin-right: -8px;
+    
+}
+
+.grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:16px
+}
+

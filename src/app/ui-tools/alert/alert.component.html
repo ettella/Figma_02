@@ -1,0 +1,11 @@
+<div class="popup" *ngIf="done && !closed" >
+    <div class="alertmessage animate__animated animate__bounceInRight">
+        <img src="./assets/check.png" alt="checked"> 
+
+        <div class="text">
+            <p>Your trip was successfully booked</p>  
+        </div>
+        <img src="./assets/cancel.png" alt="X" style="cursor:pointer" (click)="onClose()"
+        > 
+    </div>
+</div>

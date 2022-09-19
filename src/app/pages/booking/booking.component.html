@@ -1,0 +1,44 @@
+ 
+<div class="row field">
+   <div class="col-xs-12 mt-5 headerfield">
+        <h5 class="mx-3"> Let's start a new trip!</h5>
+        <a 
+        routerLink="/login"
+        > 
+        <img src="./assets/mat-avatar.png" alt="login"></a>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 gap">
+      <app-booking-detail
+      >
+      </app-booking-detail>
+    </div>
+    
+  <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <app-booking-list
+          (placeWasSelected)="selectedPlace = $event">
+        </app-booking-list>
+      </div>
+  </div>
+
+  <div class="col-xs-12 mt-5 footerfield">
+    <div class="icons">
+      <img src="./assets/icon01.png" alt="recent">
+      <p>Recent</p>
+    </div>
+
+    <div class="icons">
+      <img src="./assets/icon02.png" alt="recent">
+      <p>Favorites</p>
+    </div>
+
+    <div class="icons">
+      <img src="./assets/icon03.png" alt="recent">
+      <p>Nearby</p>
+    </div>
+  </div>
+<div>
+
+
+
+  

@@ -1,0 +1,35 @@
+<div [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div class="fields">
+                <input
+                type="type"
+                name="username"
+                id="username"
+                placeholder="Username"
+                class="form-control"
+                formControlName="username"
+                [class.error]="username.touched && username.invalid"
+                />
+
+                <img src="./assets/user.png" alt="password" class="icon">
+
+    </div >
+            <span *ngIf="username.touched && username.hasError('required')" class="error-feedback">This field is required!</span>
+            
+    <div class="fields">
+                <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                class="form-control"
+                formControlName="password"
+                [class.error]="password.touched && password.invalid"
+                />
+                
+                <img src="./assets/eye.png" alt="password" class="icon">
+
+    </div>
+            <span *ngIf="password.touched && password.hasError('required')" class="error-feedback">This field is required!</span>
+</div>
+
+
